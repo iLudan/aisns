@@ -15,12 +15,12 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-@RequestMapping("/a")
+@RequestMapping("/")
 public class IndexController {
 
     private static Logger logger =  LoggerFactory.getLogger(IndexController.class);
 
-    @RequestMapping(value = {"/a","/index"})
+    @RequestMapping(value = {"/","/index"})
     public String index(Model model){
         logger.info("this is index");
         model.addAttribute("name","dandan");
